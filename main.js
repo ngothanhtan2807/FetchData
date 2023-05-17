@@ -8,7 +8,7 @@ async function fetchData(){
    const productsDiv = document.getElementsByClassName("right-second")[0];
    for(let item of products){
     productsDiv.innerHTML+=`
-    <div class="product">
+    <div class="product" onclick="gotoDetail(${item.id})">
             <img src="${item.image}" alt="" style="width=300px, height = 360px;">
             <p>${item.title}</p>
             <span>${item.price}</span><span>d</span>
@@ -19,3 +19,7 @@ async function fetchData(){
 window.onload=()=>{
     fetchData();
 }  
+
+function gotoDetail(id){
+    window.location.assign(`detail.html?id=${id}`);
+}

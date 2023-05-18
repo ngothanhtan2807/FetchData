@@ -20,6 +20,6 @@ window.onload=()=>{
     fetchData();
 }  
 
-function gotoDetail(id){
-    window.location.assign(`detail.html?id=${id}`);
+function gotoDetail(id1){
+    window.location.assign(`detail.html?id=${id1}`);
 }

@@ -1,4 +1,6 @@
-const queryString = window.location.search();
+console.log(window.location.pathname);
+
+const queryString = window.location.search;
 const urlParam = new URLSearchParams(queryString);
 const id = urlParam.get("id");
 async function getProduct(){
@@ -6,10 +8,12 @@ async function getProduct(){
     .then(res=>res.json());
 
 }
-console.log(getProduct())
+// console.log(getProduct)
+console.log("-----------------------"+getProduct())
 async function fetchDataDetail(){
     const detail = document.getElementById("detail");
     const product = await getProduct();
+    console.log("++++++++++++++++"+product)
 detail.innerHTML=`<p>Category: ${product.category}</p>
 <p>Description: ${product.description}</p>
 <p>Title: ${product.title}</p>
@@ -18,13 +22,4 @@ detail.innerHTML=`<p>Category: ${product.category}</p>
 }
 window.onload = ()=>{
     fetchDataDetail();
-}
-const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const id = urlParams.get('id');
-    fetch(https://fakestoreapi.com/products/${id})
-            .then(res=>res.json())
-            .then(json=>console.log(json))
-function goToDetail(id) {
-  window.location.assign(details.html?id=${id});
 }

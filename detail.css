@@ -1,0 +1,122 @@
+
+.container{
+    /* width: 100%; */
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.nav{
+    padding: 10px 10px;
+    display: flex;
+    font-size: 30px;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+}
+.menu{
+    padding-left: 30px;
+    display: flex;
+}
+.menu ul li{
+    display: inline;
+    padding-left: 30px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu ul li{
+    text-decoration: none;
+    text-align: center;
+}
+.search{
+    padding-left: 180px;
+    padding-top: 30px;
+    position: relative;
+    width: 300px;
+    height: 100%;
+}
+#in-search{
+    width: 100%;
+    height: 40%;
+    padding: auto;
+    border-radius: 10px;
+}
+#in-search::after{
+    content: " ";
+    background-image: url("/img/Search.svg");
+    width: 30px;
+    height: 100%;
+    top: auto;
+    left: 10px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+.cart{
+    padding-top: 30px;
+    padding-left: 50px;
+    width: 150px;
+    height: 100%;
+    /*  */
+    display: flex;
+}
+.item-cart{
+    width: 80px;
+    height: 40px;
+    border: 2px solid black;
+   border-radius: 5px;
+   /* display: inline; */
+   /* display: flex; */
+   /* align-items: center; */
+   text-align: center;  
+   display: flex;  
+}
+.persion{
+    /* padding-top: 27px; */
+    padding-left: 10%;
+    width: 100px;
+    height: 100%;
+}
+.persion img{
+    width: 40px;
+    height: 50%;
+}
+.header span{
+    padding-right: 20px;
+}
+.center{
+    /* margin-left: 30px; */
+    margin-top: 30px;
+    width: 100%;
+    height: 700px;
+    right: 30px;
+    background-color: bisque;
+}
+.content-center{
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.content-left{
+    float: left;
+    width: 45%;
+    height: 100%;
+    background-color: aquamarine;
+}
+.img-product{
+    
+    border-radius: 10px;
+}
+.content-left img{
+    width: 475px;
+    height: 475px;
+    /* position: absolute; */
+}
+.content-right{
+    float: right;
+    width: 65%;
+    height: 100%;
+    background-color: cadetblue;
+}
